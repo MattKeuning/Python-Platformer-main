@@ -8,8 +8,7 @@ screen = pygame.display.set_mode((width,height))
 pygame.display.set_caption('Runner Game')
 clock = pygame.time.Clock()
 
-test_surface = pygame.Surface((100, 200))
-test_surface.fill('Red')
+sky_surface = pygame.image.load('8bit-pixel-art-night-sky-game-space-landscape-vector-50752838.jpg')
 
 while True:
     for event in pygame.event.get():
@@ -17,7 +16,7 @@ while True:
             pygame.quit() 
             exit()
     
-    screen.blit(test_surface,(200,100))
+    screen.blit(sky_surface,(0,0))
 
     pygame.display.update()
     clock.tick(60)
